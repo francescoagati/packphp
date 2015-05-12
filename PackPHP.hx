@@ -79,6 +79,7 @@ class PackPHP {
     classes.sort(function(a, b) {
       return getPosition(classMap, a.name) - getPosition(classMap, b.name);
     });
+    trace(classes);
 
     body = body.replace(
       "require_once dirname(__FILE__).'/"+info.lib+"php/"+info.prefix+"Boot.class.php';",
