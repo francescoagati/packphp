@@ -92,7 +92,7 @@ class PackPHP {
     );
 
     File.saveContent(main, body);
-    FileSystem.deleteFile(INFO_FILE);
+    //FileSystem.deleteFile(INFO_FILE);
   }
   
   static function phpType(type: String) {
